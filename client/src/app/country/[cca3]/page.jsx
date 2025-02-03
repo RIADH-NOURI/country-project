@@ -1,4 +1,3 @@
-import axios from "axios";
 import { CountryDetails } from "@/components/templates/countryDetails";
 import { fetchCountryData } from "@/lib/fetchcountries";
 

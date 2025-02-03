@@ -10,7 +10,7 @@ const Header = () => {
     mode === "light" ? "bg-light-mode-primary text-light-mode-text" : "bg-dark-mode-secondary text-white"
       }`}
     >
-      <div className="text-lg font-extrabold">Where in the world?</div>
+      <div className="text-lg font-extrabold">Where in the world</div>
       <div
         className="flex items-center cursor-pointer font-semibold"
         onClick={toggleMode}

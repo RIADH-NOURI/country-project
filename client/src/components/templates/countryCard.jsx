@@ -12,7 +12,7 @@ const DisplayData = ({ data }) => {
     <div className={`grid grid-cols-4 gap-5 m-12 ${mode === 'dark' ? 'bg-dark-mode-primary' : 'bg-light-mode-primary'}`}>
       {data.slice(0, 246).map((country, index) => (
         <div key={index} className={`flex flex-col rounded-lg w-48 h-56 shadow-md ${mode === 'dark' ? 'bg-dark-mode-secondary' : 'bg-white'}`}>
-          <Link href={`/country/${country.cca3}`} className="no-underline text-current">
+          <Link href={country.cca3 ? `/country/${country.cca3}` : '#'} className="no-underline text-current">
             <div className="w-full h-24 mb-5">
               <img className="w-full h-full rounded-t-lg" src={country.flags} alt={country.name.common} />
             </div>
